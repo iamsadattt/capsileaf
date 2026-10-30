@@ -4,10 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # --- Configuration: Base Directory ---
-# Updated to your new Conference folder
 base_dir = r'C:\Users\sadat\OneDrive\Desktop\Conference\prepared_dataset'
 
-# Updated to perfectly match the 6 classes your model actually trained on
 classes = [
     '12masi_morich(black)',
     'dhani_morich',

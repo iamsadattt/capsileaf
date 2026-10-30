@@ -14,8 +14,10 @@ import numpy as np
 BASE_DIR = r"C:\Users\sadat\OneDrive\Desktop\Conference"
 
 TEST_DIR = os.path.join(BASE_DIR, "prepared_dataset", "test")
-MODEL_WEIGHTS = os.path.join(BASE_DIR, "conference_capsileaf_6_class_v3.pth")
-CONFUSION_MATRIX_PATH = os.path.join(BASE_DIR, "conference_confusion_matrix_v3.png")
+
+# Pointing to the NEW weights and a NEW confusion matrix name
+MODEL_WEIGHTS = os.path.join(BASE_DIR, "conference_capsileaf_6_class_lr001.pth")
+CONFUSION_MATRIX_PATH = os.path.join(BASE_DIR, "conference_confusion_matrix_lr001.png")
 
 NUM_CLASSES = 6
 BATCH_SIZE = 16
@@ -72,7 +74,7 @@ cm = confusion_matrix(all_labels, all_preds)
 
 plt.figure(figsize=(10, 8))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=class_names, yticklabels=class_names)
-plt.title('Test Set Confusion Matrix')
+plt.title('Test Set Confusion Matrix (LR=0.001)')
 plt.ylabel('True Cultivar')
 plt.xlabel('Predicted Cultivar')
 plt.xticks(rotation=45, ha='right')

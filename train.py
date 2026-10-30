@@ -15,13 +15,15 @@ BASE_DIR = r"C:\Users\sadat\OneDrive\Desktop\Conference"
 
 TRAIN_DIR = os.path.join(BASE_DIR, "train_ready")
 VAL_DIR = os.path.join(BASE_DIR, "prepared_dataset", "val")
-MODEL_SAVE_PATH = os.path.join(BASE_DIR, "conference_capsileaf_6_class_v3.pth")
-PLOT_SAVE_PATH = os.path.join(BASE_DIR, "conference_learning_curves.png")
+
+# Renamed to protect your previous 74% baseline
+MODEL_SAVE_PATH = os.path.join(BASE_DIR, "conference_capsileaf_6_class_lr001.pth")
+PLOT_SAVE_PATH = os.path.join(BASE_DIR, "conference_learning_curves_lr001.png")
 
 BATCH_SIZE = 32
 NUM_EPOCHS = 15
 NUM_CLASSES = 6
-LEARNING_RATE = 0.01
+LEARNING_RATE = 0.001  # Lowered for stable Adam fine-tuning
 
 
 def main():
