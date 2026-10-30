@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="gensim" />
+          <option value="torch" />
+          <option value="torchvision" />
+          <option value="torchaudio" />
+          <option value="sentencepiece" />
+          <option value="sentence-transformers" />
+          <option value="importlib-metadata" />
+          <option value="tokenizers" />
+          <option value="wget" />
+          <option value="openai" />
+          <option value="pydantic" />
+          <option value="pydantic-settings" />
+          <option value="fastapi" />
+          <option value="sqlmodel" />
+          <option value="gtts" />
+          <option value="ankiapi" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
